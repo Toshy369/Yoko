@@ -1,0 +1,145 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+  position: relative
+}
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+header {
+  width: 100%; /* 横幅いっぱい */
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: darkgreen; /* 背景色darkgreen */
+}
+
+header .heading { /* headerタグ内のheadingクラスにのみ反映される */
+  font-size: 32px;
+}
+
+header .heading a {
+  color: #fff;
+}
+
+/* nav */
+nav {
+  width: 100%;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  line-height: 10px;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.main-visual {
+  width: 100%;
+  text-align: center;
+}
+
+.main-visual-content {
+  width: 100%; /* 横幅40% */
+  height: 50px; /* 親の高さに揃える */
+  background-color: #ecfcdf;
+}
+
+.main-visual-text {
+  height: 40px;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #6c6b6b /* 文字色を白に変更 */
+}
+
+main {
+  width: 100%; /* 横幅90% */
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+  padding: 0px 30px; /* 上下に70px、左右に0pxの内側余白 */
+  padding-bottom: 100px;
+  background-color: #ecfcdf;
+}
+
+.birthday, .place, .hobby, .career, .qua,.message {
+  display: flex;
+}
+
+#me {
+  display: flex;
+}
+
+.me-information {
+  width: 70%;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.lavel-p {
+  width: 100px;
+  font-weight: bold;
+}
+
+.me-picture {
+  width: 30%;
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.social {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.social i {
+  margin-right: 20px;
+}
+
+footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 100px; /* 高さ100px */
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: darkgreen; /* 背景色darkgreen */
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #me {
+    display: block;
+  }
+
+  .me-information {
+    width: 100%;
+  }
+
+  .me-picture {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
